@@ -15,8 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/info', function () {
+    return view('information.info');
+});
+
+
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 Route::get('/home', 'HomeController@index')->name('home');
+
+//info methods
+
+
+Route::get('/mental-health/getMentalHealth', 'MentalHealthController@getAll');
+
+
 
 Route::group(
 [
