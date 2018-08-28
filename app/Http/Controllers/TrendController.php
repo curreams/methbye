@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MentalHealth;
+use App\Models\Trend;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Exception;
 
-class MentalHealthController extends Controller
+class TrendController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,7 +22,7 @@ class MentalHealthController extends Controller
     
     public function getAll()
     {
-        return MentalHealth::all();
+        return Trend::all();
     }
 
     

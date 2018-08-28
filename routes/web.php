@@ -25,10 +25,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //info methods
 
-
 Route::get('/mental-health/getMentalHealth', 'MentalHealthController@getAll');
-
-
+Route::get('/first-use/getFirstUse', 'FirstUseController@getAll');
+Route::get('/trend/getTrend', 'TrendController@getAll');
+Route::get('/source/getSource', 'SourceController@getAll');
 
 Route::group(
 [

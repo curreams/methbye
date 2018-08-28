@@ -41,5 +41,8 @@ header section -->
 ============================================================= -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/mental-health.js"></script>
+<script src="js/first-use.js"></script>
+<script src="js/trend.js"></script>
+<script src="js/source.js"></script>
 </body>
 </html>
