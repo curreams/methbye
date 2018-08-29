@@ -27,7 +27,7 @@ class Trend extends Model
      */
     protected $fillable = [
         'year',
-        'health-problem',
+        'health',
         'death',
         'offence',
         'age',

@@ -2,11 +2,12 @@
 var mental_health = function()
 {
  
- var mental_health2016= function mentalHealth2016(data) {
+ var mental_health= function (data,year) {
     
 
     var myChart = echarts.init(document.getElementById('mental_health_present'));
-    let year = '2016';
+
+    //let year = '';
     let lpd = 'Low psychological distress';
     let mpd = 'Moderate psychological distress';
     let hhpd = 'High/Very high psychological distress';
@@ -14,7 +15,7 @@ var mental_health = function()
     let type_moderate = [];
     let type_high = [];
     var app = {};
-    console.log(data)
+
     data.forEach( function(value, index, array) {
      if(value.year == year && value.type.localeCompare(lpd)==0){
       type_low.push(value.psychological_distres)
@@ -27,6 +28,7 @@ var mental_health = function()
      }        
 
     });
+
     
 
 // specify chart configuration item and data
@@ -189,7 +191,7 @@ var mental_health = function()
 
 
 
-  var getAllMentalDistress = function ()
+  var getAllMentalDistress = function (year)
   {
     
         $.ajax({
@@ -198,15 +200,23 @@ var mental_health = function()
           data: {}
         })
         .done(function( data ) {
-          mental_health2016(data);
+          mental_health(data,year);
 
         });
+  }
+
+  var changeYear = function()
+  {
+    $('#mental_health_select').change(function(){            
+      getAllMentalDistress($(this).val());
+    })
   }
   return {
     //main function to initiate the module
     init: function () 
     {
-      getAllMentalDistress();
+      changeYear();
+      getAllMentalDistress(0);
       
     }
 
