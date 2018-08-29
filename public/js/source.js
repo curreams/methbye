@@ -92,15 +92,13 @@ var source = function()
           data: {}
         })
         .done(function( data ) {
-            console.log(data);
             meth_source(data, year);
 
         });
   }
   var changeYear = function()
   {
-    $('#source_select').change(function(){
-        
+    $('#source_select').change(function(){        
         getAllSource($(this).val());
     })
   }

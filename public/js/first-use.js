@@ -221,7 +221,6 @@ var first_use = function()
           data: {}
         })
         .done(function( data ) {
-            console.log(data);
             first_user(data, year);
 
         });

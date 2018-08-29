@@ -134,7 +134,7 @@ var mental_health = function()
             data: ['Low psychological distress', 'Moderate psychological distress', 'High/Very high psychological distress']
         },
         toolbox: {
-            show: true,
+            show: false,
             orient: 'vertical',
             left: 'right',
             top: 'center',
@@ -227,6 +227,5 @@ var mental_health = function()
 
 jQuery(document).ready(function() 
 {
-    console.log("Reaching this");
-    mental_health.init();
+     mental_health.init();
 });

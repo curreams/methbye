@@ -266,19 +266,19 @@ li a.active {
 /*service area*/
 
 .service {
-    background: url(../img/pattern.jpg);
+    background: #4cabce54;
     background-repeat: repeat-y;
     margin-top: 40px;
 }
 .service h2 {
     font-size: 90px;
-    color: #fff;
+    color: #036;
     margin-top: 70px;
     margin-bottom: 0;
 }
 .service h4 {
     font-size: 24px;
-    color: #fff;
+    color: #036;
     margin-top: 0;
     margin-bottom: 70px;
     display: block;
