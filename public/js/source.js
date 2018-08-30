@@ -39,7 +39,7 @@ var source = function()
                 repeat: 'repeat'
             },
             title: {
-                text: 'The Source of Meth in 2016',
+                text: 'The Source of Methamphetamine',
                 textStyle: {
                     color: '#235894'
                 }
@@ -71,7 +71,7 @@ var source = function()
                     {value:source_data[1], name:'Relative or partner'},
                     {value:source_data[2], name:'Dealer'},
                     {value:source_data[3], name:'Prescription, doctor shopping'},
-                    {value:source_data[4], name:'other'}
+                    {value:source_data[4], name:'Other'}
                 ],
                 itemStyle: itemStyle
             }]

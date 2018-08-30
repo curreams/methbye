@@ -149,7 +149,7 @@ var trend = function()
                 type: 'value'
             },
             series: [{
-                name:'test',
+                name:'offence rate',
                 data: offence_rate_unique,
                 type: 'line',
                 smooth: true
@@ -190,7 +190,7 @@ var trend = function()
                 type: 'value'
             },
             series: [{
-                name:'test',
+                name:'Health problem rate',
                 data: healt_problem_unique,
                 type: 'line',
                 smooth: true
@@ -228,7 +228,7 @@ var trend = function()
                 type: 'value'
             },
             series: [{
-                name:'test',
+                name:'Death rate',
                 data: death_rate_unique,
                 type: 'line',
                 smooth: true

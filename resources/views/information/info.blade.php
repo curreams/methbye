@@ -67,67 +67,9 @@ header section -->
 <section class="about text-center" id="about">
 	<div class="container">
 		<div class="row">
-			<h2>about us</h2>
-			<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
-			<div class="col-md-12">
-				<select id="mental_health_select" >
-					<option value="" disabled selected>Select your option</option>
-					<option value="2010">2010</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>		
-				<div id="mental_health_present" style="width:600px; height:400px"></div>
-			</div>
-
-		</div>
-	</div>
-</section><!-- end of about section -->
-
-
-<!-- service section starts here -->
-<section class="service text-center" id="service">
-	<div class="container">
-		<div class="row">
-			<h2>our services</h2>
-			<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h4>
-			<div class="col-md-12">
-				<select id="first_use_select" >
-					<option value="" disabled selected>Select your option</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>   	
-				<div id="meth_first_use" style="width:800px; height:600px"></div>				
-			</div>
-
-		</div>
-	</div>
-</section><!-- end of service section -->
-
-<section class="about text-center" id="about">
-	<div class="container">
-		<div class="row">
-			<h2>about us</h2>
-			<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
-			<div class="col-md-12">
-				<select id="source_select" >
-					<option value="" disabled selected>Select your option</option>
-					<option value="2010">2010</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>   	
-				<div id="meth_source" style="width:800px; height:600px"></div>
-			</div>
-
-		</div>
-	</div>
-</section><!-- end of about section -->
-
-<!-- service section starts here -->
-<section class="service text-center" id="service">
-	<div class="container">
-		<div class="row">
-			<h2>our services</h2>
-			<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h4>
+			<h2>Trend of Meth</h2>
+			<br>
+			<h4>Do you know the trend around Meth? Are you scared that you are the only one have this problem? Do you know the consequence of continually using meth? Please select one chart below</h4>
 			<div class="col-md-12">
 				<select id="trend_select" >
 					<option value="" disabled selected>Select your option</option>
@@ -139,11 +81,90 @@ header section -->
 				<div id="trend_source" style="width:800px; height:600px"></div>
 				
 			</div>
+		</div>
+	</div>
+</section><!-- end of about section -->
+
+
+<!-- service section starts here -->
+<section class="service text-center" id="service">
+	<div class="container">
+	<div class="row">
+			<h2>mental health</h2>
+			<br>
+			<h4>Is the meth user Struggling with psychological distress?<br><br>Low psychological problems occur
+                since taking the meth in last month was increasingly notable. The moderate
+                psychological distress and high/ very high psychological distress will be
+                reduced if you don’t take them for a long time. You will be recovered without
+                consuming meth gradually after 12 months.</h4>
+			<div class="col-md-12">
+				<select id="mental_health_select" >
+					<option value="" disabled selected>Select your option</option>
+					<option value="2010">2010</option>
+					<option value="2013">2013</option>
+					<option value="2016">2016</option>
+				</select>		
+				<div id="mental_health_present" style="width:600px; height:400px"></div>
+			</div>
 
 		</div>
+
 	</div>
 </section><!-- end of service section -->
 
+<section class="about text-center" id="about">
+	<div class="container">
+		<div class="row">
+			<h2>Reason of use</h2>
+			<br>
+			<h4>Do you know why your friend implicated in meth? Here are the reasons, and we
+                                provide the comparison of the reasons among different ages.</h4>
+			<div class="col-md-12">
+				<select id="first_use_select" >
+					<option value="" disabled selected>Select your option</option>
+					<option value="2013">2013</option>
+					<option value="2016">2016</option>
+				</select>   	
+				<div id="meth_first_use" style="width:800px; height:600px"></div>				
+			</div>
+
+		</div>		
+	</div>
+</section><!-- end of about section -->
+
+<!-- service section starts here -->
+<section class="service text-center" id="service">
+	<div class="container">
+		<div class="row">
+			<h2>Percentage of Cutdown </h2>
+			<br>
+			<h4>See how many people leave it!!</h4>
+			<div class="col-md-12">
+				<div id="meth_cutdown" style="width:800px; height:600px"></div>
+			</div>
+		</div>
+	
+	</div>
+</section><!-- end of service section -->
+<section class="about text-center" id="about">
+	<div class="container">
+		<div class="row">
+			<h2>Source of Meth</h2>
+			<br>
+			<h4>Here are the “Chief Culprits” that hurt you and your Families!!</h4>
+			<div class="col-md-12">
+				<select id="source_select" >
+					<option value="" disabled selected>Select your option</option>
+					<option value="2010">2010</option>
+					<option value="2013">2013</option>
+					<option value="2016">2016</option>
+				</select>   	
+				<div id="meth_source" style="width:800px; height:600px"></div>
+			</div>
+
+		</div>			
+	</div>
+</section><!-- end of about section -->
 
 <!-- footer starts here -->
 <footer class="footer clearfix">
@@ -163,5 +184,6 @@ header section -->
 <script src="js/first-use.js"></script>
 <script src="js/trend.js"></script>
 <script src="js/source.js"></script>
+<script src="js/cutdown.js"></script>
 </body>
 </html>
