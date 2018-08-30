@@ -75,7 +75,7 @@ header section -->
 						<img src="img/homepage.jpg" alt="">
 						<div class="carousel-caption">
 							<h1>Meth-Bye</h1>
-							<p>Help you to withdraw Meth</p>
+							<p>THE LEADING SOURCE FOR ASSISTING YOUR FAMILY AND FRIEND</p>
 							<!--<button>learn more</button>-->
 						</div>
 					</div>
@@ -122,9 +122,8 @@ header section -->
 <section class="about text-center" id="info">
 	<div class="container">
 		<div class="row">
-			<h2>Introduction</h2>
-			<!--<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>-->
-			<h4>Using meth may cause lots of problems</h4>
+			<h2>Information</h2>
+		    <h4>Understanding methamphetamine</h4>
 			<div class="intro_layout">
 				<div class="col-md-4 col-sm-6 intro_inline" id="intro_methuser">
 					<a href="/info">
@@ -134,12 +133,13 @@ header section -->
 							</div>
 							<div class="about-details" id="about-details">
 								<div class="pentagon-text">
-									<h1>C</h1>
+									<h1>I</h1>
 								</div>
-								<!--<h3>Children’s specialist</h3>-->
-								<h3>Conquence</h3>
-								<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>-->
-								<p>If you use meth continuely, the conquence may very dangerous</p>
+                                <!--<h3>Children’s specialist</h3>-->
+								<h3></h3>
+								<p><br>If you are using methamphetamine,do you know the consequence if you use methamphetamine continually?
+								<br>If you want to help your family and friend, do you really understand them?
+								<br>Click here If you want read more</p>
 							</div>
 						</div>
 					</a>
