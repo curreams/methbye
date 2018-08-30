@@ -137,9 +137,9 @@ header section -->
 								</div>
                                 <!--<h3>Children’s specialist</h3>-->
 								<h3></h3>
-								<p><br>If you are using methamphetamine,do you know the consequence if you use methamphetamine continually?
-								<br>If you want to help your family and friend, do you really understand them?
-								<br>Click here If you want read more</p>
+								<p><br>If you are using methamphetamine,do you know the consequence of using Methamphetamine continuously?
+								<br>If you want to help your family and friend, do you really understand it?
+								<br>Click here If you want know more</p>
 							</div>
 						</div>
 					</a>
