@@ -1,14 +1,19 @@
-@extends('layouts.app')
+@extends('layouts.methbyecontent') 
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+<br>
+<br>
+<br>
+<br>
+<section class="about text-center" id="register">
+	<div class="container">
+		<div class="row">
+			<h2>{{ __('Login') }}</h2>
+		    
+			<div class="intro_layout">				
+				<div class="col-md-8 col-sm-12 intro_inline" id="intro_methuser">
+                <div class="card-body methfont" >
+                <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -64,8 +69,14 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+				</div>
+				<div class="col-md-3 intro_inline"></div>
+
+			</div>
+
+
+		</div>
+	</div>
+</section><!-- end of about section -->
 @endsection
