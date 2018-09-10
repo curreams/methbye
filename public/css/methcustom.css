@@ -1,18 +1,44 @@
+/*
 #intro_methuser {
-    margin-left: 15%;
+    width: 50%;
+    height: 50%;
 }
+
 #about-img {
     width: 791px;
 }
 #about-details{
     width: 791px;
 }
+*/
 #header_info{
     background: #4cabce !important;
 }
 #home_header{
     color: #ffff !important;
 }
+#trend_header{
+    color: #ffff !important;
+}
+#mental_header{
+    color: #ffff !important;
+}
+#reason_header{
+    color: #ffff !important;
+}
+#cut_header{
+    color: #ffff !important;
+}
+#source_header{
+    color: #ffff !important;
+}
+
 .meth_select{
     font-size: x-large;
+}
+#info_info{
+    font-size: large;
+}
+.methfont{
+    font-size:large;
 }

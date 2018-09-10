@@ -29,8 +29,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-                  'name',
-                  'email',
+                  'username',
+                  'phone',
                   'password'
               ];
     protected $hidden = [
@@ -90,29 +90,5 @@ class User extends Authenticatable
         return false;
     }
 
-
-    /**
-     * Get created_at in array format
-     *
-     * @param  string  $value
-     * @return array
-     */
-    public function getCreatedAtAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y g:i A', $value);
-
-    }
-
-    /**
-     * Get updated_at in array format
-     *
-     * @param  string  $value
-     * @return array
-     */
-    public function getUpdatedAtAttribute($value)
-    {
-        return \DateTime::createFromFormat('j/n/Y g:i A', $value);
-
-    }
 
 }

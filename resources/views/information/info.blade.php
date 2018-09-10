@@ -49,7 +49,12 @@ header section -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					  
 					  <ul class="nav navbar-nav navbar-right">
-						<li><a class="menu active" href="/" id="home_header">Home</a></li>						
+						<li><a class="menu active" href="/" id="home_header">Home</a></li>
+						<li><a class="menu active" href="#trends" id="trend_header">Trends</a></li>
+						<li><a class="menu active" href="#mental" id="mental_header">Mental Health</a></li>
+						<li><a class="menu active" href="#reason" id="reason_header">Reasons of Use</a></li>
+						<li><a class="menu active" href="#cut" id="cut_header">Cut Down</a></li>
+						<li><a class="menu active" href="#source" id="source_header">Sources</a></li>						
 					  </ul>
 					</div><!-- /navbar-collapse -->
 				  </div><!-- / .container-fluid -->
@@ -64,7 +69,7 @@ header section -->
 <br>
 <br>
 <br>
-<section class="about text-center" id="about">
+<section class="about text-center" id="trends">
 	<div class="container">
 		<div class="row">
 			<h2>Trend of Meth</h2>
@@ -88,7 +93,8 @@ header section -->
 
 
 <!-- service section starts here -->
-<section class="service text-center" id="service">
+
+<section class="service text-center" id="mental">
 	<div class="container">
 	<div class="row">
 			<h2>mental health</h2>
@@ -114,7 +120,7 @@ header section -->
 	</div>
 </section><!-- end of service section -->
 
-<section class="about text-center" id="about">
+<section class="about text-center" id="reason">
 	<div class="container">
 		<div class="row">
 			<h2>Reason of use</h2>
@@ -136,7 +142,8 @@ header section -->
 </section><!-- end of about section -->
 
 <!-- service section starts here -->
-<section class="service text-center" id="service">
+
+<section class="service text-center" id="cut">
 	<div class="container">
 		<div class="row">
 			<h2>Percentage of Cutdown </h2>
@@ -149,7 +156,8 @@ header section -->
 	
 	</div>
 </section><!-- end of service section -->
-<section class="about text-center" id="about">
+
+<section class="about text-center" id="source">
 	<div class="container">
 		<div class="row">
 			<h2>Source of Meth</h2>
