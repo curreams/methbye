@@ -61,6 +61,19 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the events for this model.
+     */
+    public function event()
+    {
+        return $this->hasMany('App\Models\Event');
+    }
+
+    public static function getUserByPhone($phone)
+    {
+        return User::where('phone', $phone)->first();
+    }
+
+    /**
      * Check if the user has any role
      * 
      * @param Object $roles 

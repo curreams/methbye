@@ -100,3 +100,41 @@ Route::group(
 
 Auth::routes();
 
+
+Route::group(
+[
+    'prefix' => 'events',
+], function () {
+
+    Route::get('/', 'EventsController@index')
+         ->name('events.event.index');
+
+    Route::get('/create','EventsController@create')
+         ->name('events.event.create');
+
+    Route::get('/show/{event}','EventsController@show')
+         ->name('events.event.show')
+         ->where('id', '[0-9]+');
+
+    Route::get('/{event}/edit','EventsController@edit')
+         ->name('events.event.edit')
+         ->where('id', '[0-9]+');
+
+    Route::post('/', 'EventsController@store')
+         ->name('events.event.store');
+               
+    Route::put('event/{event}', 'EventsController@update')
+         ->name('events.event.update')
+         ->where('id', '[0-9]+');
+
+    Route::delete('/event/{event}','EventsController@destroy')
+         ->name('events.event.destroy')
+         ->where('id', '[0-9]+');
+
+    Route::get('/register/{event}','EventsController@register')
+        ->name('events.event.register');
+
+    Route::get('/testRegister','EventsController@testRegister')
+          ->name('events.event.testRegister');
+
+});
