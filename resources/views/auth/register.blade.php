@@ -1,4 +1,4 @@
-@extends('layouts.methbyecontent') 
+@extends('layouts.app') 
 
 @section('content')
 <br>

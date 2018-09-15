@@ -136,5 +136,6 @@ Route::group(
 
     Route::get('/testRegister','EventsController@testRegister')
           ->name('events.event.testRegister');
+    Route::get('/info', 'EventsController@getInfo');
 
 });

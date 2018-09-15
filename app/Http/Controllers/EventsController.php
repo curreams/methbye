@@ -194,6 +194,11 @@ class EventsController extends Controller
         return $this->register(json_encode($test_array));
     }
 
+    public function getinfo()
+    {
+        return view('events.info');
+    }
+
 
 
 }

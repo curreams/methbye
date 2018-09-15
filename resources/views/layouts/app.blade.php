@@ -5,101 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'booking-engine') }}</title>
+    <title>{{ config('app.name', 'MethBye') }}</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-
-    <style>
-        body {
-            padding-top: 65px;
-            padding-bottom: 20px;
-        }
-
-        /* Set padding to keep content from hitting the edges */
-        .body-content {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        /* Override the default bootstrap behavior where horizontal description lists 
-           will truncate terms that are too long to fit in the left column.
-           Also, add a 8pm to the bottom margin
-        */
-        .dl-horizontal dt {
-            white-space: normal;
-            margin-bottom: 8px;
-        }
-
-        /* Set width on the form input elements since they're 100% wide by default */
-        input,
-        select,
-        textarea,
-        .uploaded-file-group,
-        .input-width-input {
-            max-width: 380px;
-        }
-
-        .input-delete-container {
-            width: 46px !important;
-        }
-
-        /* Vertically align the table cells inside body-panel */
-        .panel-body .table > tr > td
-        {
-            vertical-align: middle;
-        }
-
-        .panel-body-with-table
-        {
-            padding: 0;
-        }
-
-        .mt-5 {
-            margin-top: 5px !important;
-        }
-
-        .mb-5 {
-            margin-bottom: 5px !important;
-        }
-    </style>
-
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ asset('css/methcustom.css') }}">
+    
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-            <a href="/"><img src="img/logo.png" alt="MethBye" class="img-responsive logo"></a>
-            <!-- > <a href="{!! url('/') !!}" class="navbar-brand">{{ config('app.name', 'booking-engine') }}</a>
-            <-->
+    <header class="top-header" id="header_info">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 header-logo">
+                    <br>
+                    <a href="/"><img src="{{ asset('img/logo2.png') }}" alt="MethBye" class="img-responsive logo"></a>
+                </div>
+
+                <div class="col-md-7">
+                    <nav class="navbar navbar-default">
+                    <div class="container-fluid nav-bar">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="menu bluemenu" href="/" >Home</a></li>
+                            <li><a class="menu bluemenu" href="/info">Info</a></li>
+                            @if (Route::has('login'))
+                            
+                            @if (Auth::check())
+                            <li><a class="menu bluemenu" href="{{ url('/logout') }}">Logout</a></li>
+                            @else
+                            <li><a class="menu bluemenu" href="{{ url('/login') }}">Login</a></li>
+                            <li><a class="menu bluemenu" href="{{ url('/register') }}">Register</a></li>
+                            @endif
+                            
+                            @endif
+
+                            <!--<li><a class="menu" href="#service">download</a></li>-->
+                            <!--<li><a class="menu" href="#team">record</a></li>-->
+                            <!--<li><a class="menu" href="#ourGroup">contact</a></li>-->
+                        </ul>
+                        </div><!-- /navbar-collapse -->
+                    </div><!-- / .container-fluid -->
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="{!! url('/') !!}">Home</a></li>
-          </ul>
-
-          @if (Route::has('login'))
-            <ul class="nav navbar-nav navbar-right">
-            @if (Auth::check())
-                <li><a href="{{ url('/logout') }}">Logout</a></li>
-            @else
-                <li><a href="{{ url('/login') }}">Login</a></li>
-                <li><a href="{{ url('/register') }}">Register</a></li>
-            @endif
-            </ul>
-          @endif
-
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    </header> <!-- end of header area -->
 
     <div class="container body-content">
         @yield('content')
     </div>
+
+<!-- footer starts here -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 footer-para">
+                    <!--<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://guantaow.taobao.com/">厚朴网络淘宝店</a><a target="_blank" href="http://www.moobnn.com">网页模板</a></p>-->
+                    <p>MIT License ; 2018.InCoChi Group.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Scripts -->
     
@@ -108,6 +95,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
     {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
     <script type="text/javascript">
         $(function(){
 
