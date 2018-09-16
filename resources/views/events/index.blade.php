@@ -41,8 +41,10 @@
                 <table class="table table-striped ">
                     <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>User</th>
+                            <th>text</th>
+                            <th>Location</th>
+                            <th>Current Mood</th>
+                            <th>Physical Condition</th>
 
                             <th></th>
                         </tr>
@@ -51,7 +53,9 @@
                     @foreach($events as $event)
                         <tr>
                             <td>{{ $event->date }}</td>
-                            <td>{{ optional($event->user)->name }}</td>
+                            <td>{{ $event->location }}</td>
+                            <td>{{ implode('; ', $event->currentMood) }}</td>
+                            <td>{{ implode('; ', $event->physicalCondition) }}</td>
 
                             <td>
 

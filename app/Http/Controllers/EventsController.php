@@ -7,9 +7,17 @@ use App\Models\Event;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Exception;
+use Auth;
 
 class EventsController extends Controller
 {
+    /**
+     * New instance
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Display a listing of the events.
@@ -50,7 +58,7 @@ class EventsController extends Controller
             
             Event::create($data);
 
-            return redirect()->route('events.event.index')
+            return redirect()->route('welcome')
                              ->with('success_message', 'Event was successfully added!');
 
         } catch (Exception $exception) {
@@ -148,22 +156,36 @@ class EventsController extends Controller
      */
     protected function getData(Request $request)
     {
-        $rules = [
-            'date' => 'string|min:1|nullable',
-            'description' => 'string|min:1|max:20000|nullable',
-            'user_id' => 'nullable',
-     
-        ];
-
+        $currentMood = '';
+        foreach ($request['currentMood'] as $key => $mood) {
+            $currentMood .= ' ' . $mood;
+           
+        }
+        $physicalCondition = '';
+        foreach ($request['physicalCondition'] as $key => $condition) {
+            $physicalCondition .= ' ' . $condition;
+        }
+       
+        $details = "Location: " . $request['location']. chr(0x0D).chr(0x0A).
+                   "Current Mood". $currentMood. chr(0x0D).chr(0x0A).
+                   "Physical Condition" . $physicalCondition. chr(0x0D).chr(0x0A).
+                   "Extra Details " .     $request['details'];
         
-        $data = $request->validate($rules);
-
-
-
-
+        $userId = Auth::user()->id;
+        $is_complete = 1;        
+        $date_time = $request['date'] . ' '. $request['time'];
+        
+        $data = [
+            'date' => $date_time,
+            'description' => $details,
+            'user_id' => $userId,
+            'is_complete'=> $is_complete,       
+        ];
         return $data;
     }
-
+    /**
+     * Register an incomplete event. Web service
+     */
     public function register($event)
     {
         $date_time = date('Y-m-d H:i:s');
@@ -185,7 +207,25 @@ class EventsController extends Controller
           
         
     }
+    /**
+     * 
+     */
+    public function displayTimeline()
+    {
+        $userId = Auth::user()->id;
+        $events = Event::getEventByUserId($userId);
+        $firstEvent  = Event::getFirstEventByUser($userId);
+        foreach ($events as $key => $event) {
+            
+            //dd(date('d/m/Y', strtotime($event->date)));
+        }
+        return view('events.timeline', compact('events'));
+        
+    }
 
+    /**
+     * Register a test for the web service
+     */
     public function testRegister()
     {
         $test_array = [
@@ -193,7 +233,9 @@ class EventsController extends Controller
         ];
         return $this->register(json_encode($test_array));
     }
-
+    /**
+     * Get info view
+     */
     public function getinfo()
     {
         return view('events.info');

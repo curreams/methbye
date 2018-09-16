@@ -12,7 +12,16 @@
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/welcome', function () {
     return view('welcome');
+})->name('welcome')
+  ->middleware('auth');
+
+Route::get('/unauthenticated', function () {
+    return view('unauthenticated');
 });
 
 Route::get('/info', function () {
@@ -23,7 +32,7 @@ Route::get('/info', function () {
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 Route::get('/home', 'HomeController@index')->name('home');
 
-//info methods
+//info methods charts
 
 Route::get('/mental-health/getMentalHealth', 'MentalHealthController@getAll');
 Route::get('/first-use/getFirstUse', 'FirstUseController@getAll');
@@ -136,6 +145,11 @@ Route::group(
 
     Route::get('/testRegister','EventsController@testRegister')
           ->name('events.event.testRegister');
+
     Route::get('/info', 'EventsController@getInfo');
+
+    Route::get('/timeline', 'EventsController@displayTimeline')
+         ->name('events.event.timeline');   
+
 
 });

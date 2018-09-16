@@ -16,7 +16,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('css/methcustom.css') }}">
-    
+	<link rel="stylesheet" href="{{ asset('css/timeline.css') }}"> 
+	
+	
 </head>
 
 <body>
@@ -97,6 +99,9 @@
     {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/timeline.js') }}"></script>    
+    <script src="{{ asset('js/jquery.mobile.custom.min.js') }}"></script>
+    <script src="{{ asset('js/modernizr.js') }}"></script>
     <script type="text/javascript">
         $(function(){
 

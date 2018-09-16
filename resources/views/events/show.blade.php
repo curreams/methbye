@@ -39,12 +39,16 @@
 
     <div class="panel-body">
         <dl class="dl-horizontal">
-            <dt>Date</dt>
+            <dt>text</dt>
             <dd>{{ $event->date }}</dd>
-            <dt>Description</dt>
-            <dd>{{ $event->description }}</dd>
-            <dt>User</dt>
-            <dd>{{ optional($event->user)->name }}</dd>
+            <dt>Location</dt>
+            <dd>{{ $event->location }}</dd>
+            <dt>Current Mood</dt>
+            <dd>{{ implode('; ', $event->currentMood) }}</dd>
+            <dt>Physical Condition</dt>
+            <dd>{{ implode('; ', $event->physicalCondition) }}</dd>
+            <dt>Details</dt>
+            <dd>{{ $event->details }}</dd>
 
         </dl>
 

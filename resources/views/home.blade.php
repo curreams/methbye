@@ -1,23 +1,59 @@
-@extends('layouts.app')
+@extends('layouts.methbye')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<section class="slider" id="home">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+				<div class="header-backup"></div>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/homepage.jpg" alt="">
+						<div class="carousel-caption">
+							<h1>Methbye</h1>
+							<p>THE LEADING SOURCE FOR ASSISTING YOUR FAMILY AND FRIEND</p>
+							<!--<button>learn more</button>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- end of slider section -->
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<!-- Introduction section -->
+<br>
+<br>
+<section class="about text-center" id="info">
+	<div class="container">
+		<div class="row">
+			<h2>Information</h2>
+		    <h4>Understanding methamphetaminealskdjalksjdkl</h4>
+			<div class="intro_layout">
+				<div class="col-md-3 intro_inline"></div>
+				<div class="col-md-6 intro_inline" id="intro_methuser">
+					<a href="/info">
+						<div class="single-about-detail clearfix">
+							<div class="about-img" id="about-img">
+								<img class="img-responsive" src="img/item1.jpg" alt="">
+							</div>
+							<div class="about-details" id="about-details">
+								
+								<h3></h3>
+								<p id="info_info"><br>If you are using methamphetamine,do you know the consequence of using Methamphetamine continuously?
+								<br>If you want to help your family and friend, do you really understand it?
+								<br>Click here If you want know more</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 intro_inline"></div>
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+			</div>
+
+
+		</div>
+	</div>
+</section><!-- end of about section -->
 @endsection

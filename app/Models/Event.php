@@ -50,6 +50,15 @@ class Event extends Model
         return $this->belongsTo('App\Models\User','user_id');
     }
 
+    public static function getEventByUserId($id)
+    {
+        return Event::where('user_id', $id)->get();
+    }
+    public static function getFirstEventByUser($id)
+    {
+        return Event::where('user_id', $id)->first();
+    }
+
 
 
 }
