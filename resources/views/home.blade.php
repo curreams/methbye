@@ -12,7 +12,7 @@
 						<img src="img/homepage.jpg" alt="">
 						<div class="carousel-caption">
 							<h1>Methbye</h1>
-							<p>THE LEADING SOURCE FOR ASSISTING YOUR FAMILY AND FRIEND</p>
+							<p>An excellent source for providing a helping hand to your friend/relative in the recovery process.</p>
 							<!--<button>learn more</button>-->
 						</div>
 					</div>
