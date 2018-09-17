@@ -28,7 +28,16 @@
             <div class="row">
                 <div class="col-xs-5 header-logo">
                     <br>
-                    <a href="/"><img src="{{ asset('img/logo2.png') }}" alt="MethBye" class="img-responsive logo"></a>
+                    @if (Route::has('login'))
+                            
+                            @if (Auth::check())
+                            <a href="/welcome"><img src="{{ asset('img/logo2.png') }}" alt="MethBye" class="img-responsive logo"></a>
+                            @else
+                            <a href="/"><img src="{{ asset('img/logo2.png') }}" alt="MethBye" class="img-responsive logo"></a>
+                            @endif
+                            
+                    @endif
+                    
                 </div>
 
                 <div class="col-md-7">
@@ -48,13 +57,17 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="menu bluemenu" href="/" >Home</a></li>
-                            <li><a class="menu bluemenu" href="/info">Info</a></li>
                             @if (Route::has('login'))
                             
                             @if (Auth::check())
+                            <li><a class="menu bluemenu" href="/welcome" >Home</a></li>
+                            <li><a class="menu bluemenu" href="/info">Info</a></li>                            
+                            <li><a class="menu bluemenu" href="/events/info">Create Event</a></li>
+                            <li><a class="menu bluemenu" href="/events/timeline">See Events</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/logout') }}">Logout</a></li>
                             @else
+                            <li><a class="menu bluemenu" href="/" >Home</a></li>
+                            <li><a class="menu bluemenu" href="/info">Info</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/login') }}">Login</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/register') }}">Register</a></li>
                             @endif

@@ -29,7 +29,7 @@
 	<div class="container">
 		<div class="row">
 			<h2>Information</h2>
-		    <h4>Understanding methamphetaminealskdjalksjdkl</h4>
+		    <h4>Understanding methamphetamine</h4>
 			<div class="intro_layout">
 				<div class="col-md-3 intro_inline"></div>
 				<div class="col-md-6 intro_inline" id="intro_methuser">

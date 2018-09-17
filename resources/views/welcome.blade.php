@@ -1,4 +1,4 @@
-@extends('layouts.methbye')
+@extends('layouts.app')
 
 @section('content')
 
@@ -35,7 +35,9 @@
 							<div class="about-details" id="about-details">
 								
 								<h3>Meth information</h3>
-								<p id="info_info"><br>bla bla bla
+								<p id="info_info"><br>If you are using methamphetamine,do you know the consequence of using Methamphetamine continuously?
+								<br>If you want to help your family and friend, do you really understand it?
+								<br>Click here If you want know more</p>
 								
 							</div>
 						</div>
@@ -50,7 +52,11 @@
 							<div class="about-details" id="about-details">
 								
 								<h3>Create an Event</h3>
-								<p id="info_info"><br>bla bla bla
+								<p id="info_info"><br>Please start sharing your feelings to get help from your friend/relative 
+								<br>whom you feel comfortable and secured with, and your friend/relative can keep track of 
+								<br>your status by creating the events.
+								<br>
+								<br>
 								
 							</div>
 						</div>
@@ -65,7 +71,11 @@
 							<div class="about-details" id="about-details">
 								
 								<h3>See Events</h3>
-								<p id="info_info"><br>bla bla bla3
+								<p id="info_info"><br>Want to see the status of your friend to help him in the 
+								<br>process of recovery? Then have a look at the timeline of events created by you.
+								<br>
+								<br>
+								<br>
 								
 							</div>
 						</div>

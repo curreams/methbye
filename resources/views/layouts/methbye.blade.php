@@ -49,13 +49,18 @@ header section -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					  
 					  <ul class="nav navbar-nav navbar-right">
-						<li><a class="menu active" href="#home" >Home</a></li>
-						<li><a class="menu" href="#info">Info</a></li>
+
 						@if (Route::has('login'))
 						
 						@if (Auth::check())
+						<li><a class="menu active" href="/welcome" >Home</a></li>
+						<li><a class="menu" href="/info">Info</a></li>                            
+						<li><a class="menu" href="/events/info">Create Event</a></li>
+						<li><a class="menu" href="/events/timeline">See Events</a></li>
 						<li><a class="menu" href="{{ url('/logout') }}">Logout</a></li>
 						@else
+						<li><a class="menu active" href="/" >Home</a></li>
+						<li><a class="menu" href="/info">Info</a></li>
 						<li><a class="menu" href="{{ url('/login') }}">Login</a></li>
 						<li><a class="menu" href="{{ url('/register') }}">Register</a></li>
 						@endif

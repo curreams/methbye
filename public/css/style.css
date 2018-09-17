@@ -271,16 +271,17 @@ li a.active {
     margin-top: 40px;
 }
 .service h2 {
-    font-size: 90px;
+    font-size: 46px;
     color: #036;
     margin-top: 70px;
     margin-bottom: 0;
 }
 .service h4 {
-    font-size: 24px;
-    color: #036;
+    font-size: 20px;
+    color: #737373;
     margin-top: 0;
     margin-bottom: 70px;
+    margin-right: 25px;
     display: block;
 }
 .single-service-img {

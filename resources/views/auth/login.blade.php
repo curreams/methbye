@@ -8,7 +8,11 @@
 <section class="about text-center" id="register">
 	<div class="container">
 		<div class="row">
-			<h2>{{ __('Login') }}</h2>
+            <h2>{{ __('Login') }}</h2>
+            <br>
+            <br>
+            <br>
+            <br>
 		    
 			<div class="intro_layout">				
 				<div class="col-md-8 col-sm-12 intro_inline" id="intro_methuser">
