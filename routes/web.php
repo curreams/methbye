@@ -140,10 +140,10 @@ Route::group(
          ->name('events.event.destroy')
          ->where('id', '[0-9]+');
 
-    Route::get('/register/{event}','EventsController@register')
+    Route::get('/register/{event}','WebserviceController@register')
         ->name('events.event.register');
 
-    Route::get('/testRegister','EventsController@testRegister')
+    Route::get('/testRegister','WebserviceController@testRegister')
           ->name('events.event.testRegister');
 
     Route::get('/info', 'EventsController@getInfo');

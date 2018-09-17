@@ -231,7 +231,8 @@ class EventsController extends Controller
         $test_array = [
             'mobile' => '0401735648',
         ];
-        return $this->register(json_encode($test_array));
+        $web_service = new WebserviceController;
+        return $web_service->register(json_encode($test_array));
     }
     /**
      * Get info view
