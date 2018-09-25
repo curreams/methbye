@@ -158,12 +158,12 @@ class EventsController extends Controller
     {
         $currentMood = '';
         foreach ($request['currentMood'] as $key => $mood) {
-            $currentMood .= ' ' . $mood;
+            $currentMood .= ' ' . $mood . ',';
            
         }
         $physicalCondition = '';
         foreach ($request['physicalCondition'] as $key => $condition) {
-            $physicalCondition .= ' ' . $condition;
+            $physicalCondition .= ' ' . $condition . ',';
         }
        
         $details = "Location: " . $request['location']. chr(0x0D).chr(0x0A).
@@ -173,7 +173,7 @@ class EventsController extends Controller
         
         $userId = Auth::user()->id;
         $is_complete = 1;        
-        $date_time = $request['date'] . ' '. $request['time'];
+        $date_time = $request['date'];
         
         $data = [
             'date' => $date_time,

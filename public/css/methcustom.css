@@ -11,6 +11,10 @@
     width: 791px;
 }
 */
+.label-form{
+    font-weight: bold;
+}
+
 #header_info{
     background: #4cabce !important;
     font-family: "Fira Sans", sans-serif !important;

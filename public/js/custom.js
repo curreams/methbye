@@ -6,6 +6,11 @@ jQuery(document).ready(function () {
 
     //this code is for smooth scroll and nav selector
     $(document).ready(function () {
+
+        $('#date').datetimepicker({
+            step:15
+        });
+
         $(document).on("scroll", onScroll);
 
         //smoothscroll
@@ -34,13 +39,7 @@ jQuery(document).ready(function () {
         var scrollPos = $(document).scrollTop();
         $('.navbar-default .navbar-nav>li>a').each(function () {
             var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('.navbar-default .navbar-nav>li>a').removeClass("active");
-                currLink.addClass("active");
-            } else {
-                currLink.removeClass("active");
-            }
+            
         });
     }
 
