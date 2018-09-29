@@ -29,7 +29,10 @@ class Event extends Model
      */
     protected $fillable = [
                   'date',
-                  'description',
+                  'location',
+                  'mood',
+                  'physical_condition',
+                  'details',
                   'user_id',
                   'is_complete'
               ];
@@ -52,7 +55,7 @@ class Event extends Model
 
     public static function getEventByUserId($id)
     {
-        return Event::where('user_id', $id)->get();
+        return Event::where('user_id', $id)->orderBy('date', 'asc')->get();
     }
     public static function getFirstEventByUser($id)
     {

@@ -156,28 +156,30 @@ class EventsController extends Controller
      */
     protected function getData(Request $request)
     {
+        
         $currentMood = '';
         foreach ($request['currentMood'] as $key => $mood) {
-            $currentMood .= ' ' . $mood . ',';
+            if($mood) {
+                $currentMood .= ' ' . $mood . ',';
+            }
            
         }
         $physicalCondition = '';
         foreach ($request['physicalCondition'] as $key => $condition) {
-            $physicalCondition .= ' ' . $condition . ',';
+            if($condition){
+                $physicalCondition .= ' ' . $condition . ',';
+            }
         }
-       
-        $details = "Location: " . $request['location']. chr(0x0D).chr(0x0A).
-                   "Current Mood". $currentMood. chr(0x0D).chr(0x0A).
-                   "Physical Condition" . $physicalCondition. chr(0x0D).chr(0x0A).
-                   "Extra Details " .     $request['details'];
-        
         $userId = Auth::user()->id;
         $is_complete = 1;        
         $date_time = $request['date'];
         
         $data = [
             'date' => $date_time,
-            'description' => $details,
+            'location' => $request['location'],
+            'mood' => $currentMood,
+            'physical_condition' => $physicalCondition,
+            'details' =>  $request['details'],
             'user_id' => $userId,
             'is_complete'=> $is_complete,       
         ];

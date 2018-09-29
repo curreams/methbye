@@ -58,6 +58,9 @@
                                             Other
                                         </label>
                                     </div>
+                                    <div class="col-md-12">
+                                        <input class="form-control" name="location" id="location_other_text" disabled required>
+                                    </div>                                    
 
                                     {!! $errors->first('location', '<p class="help-block">:message</p>') !!}
                                 </div>
@@ -103,10 +106,13 @@
                                     </div>
                                     <div class="checkbox">
                                         <label for="currentMood_other">
-                                            <input id="currentMood_other" class="" name="currentMood[]" type="checkbox" value="Other" >
+                                            <input id="currentMood_other" class="" name="currentMood[]" type="checkbox" value="" >
                                             Other
                                         </label>
                                     </div>
+                                    <div class="col-md-12">
+                                        <input class="form-control" name="currentMood[]" id="currentMood_other_text" disabled>
+                                    </div>  
 
                                     {!! $errors->first('currentMood', '<p class="help-block">:message</p>') !!}
                                 </div>
@@ -146,9 +152,12 @@
                                     </div>
                                     <div class="checkbox">
                                         <label for="physicalCondition_other">
-                                            <input id="physicalCondition_other" class="" name="physicalCondition[]" type="checkbox" value="Other" >
+                                            <input id="physicalCondition_other" class="" name="physicalCondition[]" type="checkbox" value="" >
                                             Other
                                         </label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="form-control" name="physicalCondition[]" id="physicalCondition_other_text" disabled>
                                     </div>
 
                                     {!! $errors->first('physicalCondition', '<p class="help-block">:message</p>') !!}
@@ -180,5 +189,9 @@
 
         </div>
     </div>
-</section> 
+</section>
+
+@endsection
+@section('scripts')
+<script src="{{ asset('js/event.js') }}"></script> 
 @endsection
