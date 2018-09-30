@@ -162,6 +162,15 @@ Route::group(
         Route::get('/','ReportsController@index');
 
         Route::post('/generate','ReportsController@generate')
-            ->name('reports.report.generate');  ;
+            ->name('reports.report.generate'); 
     
     });
+Route::group(
+        [
+            'prefix' => 'maps',
+        ], function () {
+               
+            Route::get('/','MapsController@index');            
+            
+        });
+    
