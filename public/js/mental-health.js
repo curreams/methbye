@@ -5,6 +5,8 @@ var mental_health = function()
  var mental_health= function (data,year) {
     
 
+    //console.log(data);
+
     var myChart = echarts.init(document.getElementById('mental_health_present'));
 
     //let year = '';
@@ -17,13 +19,13 @@ var mental_health = function()
     var app = {};
 
     data.forEach( function(value, index, array) {
-     if(value.year == year && value.type.localeCompare(lpd)==0){
+     if(value.period == year && value.type.localeCompare(lpd)==0){
       type_low.push(value.psychological_distres)
      }
-     if(value.year == year && value.type.localeCompare(mpd)==0){
+     if(value.period == year && value.type.localeCompare(mpd)==0){
       type_moderate.push(value.psychological_distres)
      }
-     if(value.year == year && value.type.localeCompare(hhpd)==0){      
+     if(value.period == year && value.type.localeCompare(hhpd)==0){      
       type_high.push(value.psychological_distres)
      }        
 
@@ -151,12 +153,19 @@ var mental_health = function()
             {
                 type: 'category',
                 axisTick: {show: false},
-                data: ['Used in last month', 'Used in 12 months', 'Not used in 12 months']
+                //data: ['Used in last month', 'Used in 12 months', 'Not used in 12 months']
+                data:['2010','2013','2016']
             }
         ],
         yAxis: [
             {
-                type: 'value'
+                type: 'value',                    
+                axisLabel:{
+                formatter:'{value} %'
+                },
+                name:'Percentage',
+                nameLocation: 'middle',
+                nameGap:50
             }
         ],
         series: [

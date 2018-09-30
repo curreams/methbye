@@ -12,16 +12,16 @@
 			<br>
 			<h4>Do you know the trend around Meth? Are you scared that you are the only one have this problem? Do you know the consequence of continually using meth? Please select one chart below</h4>
 			<div class="col-md-12 meth_select">
-				<label>Select one Trend</label> &nbsp;&nbsp;
+				<label>Select one trend</label> &nbsp;&nbsp;
 				<select id="trend_select" >
 					<option value="" disabled selected>Select...</option>
 					<option value="health">Health Problem</option>
 					<option value="death">Death Rate</option>
-					<option value="offences">Offences Rate</option>			
-					<option value="age">Age Distribution</option>
-				</select>   
+					<option value="offences">Offences Rate</option>
+					
+				</select>
 				<div id="trend_source" style="width:800px; height:600px"></div>
-				
+
 			</div>
 		</div>
 	</div>
@@ -41,13 +41,13 @@
                 reduced if you don’t take them for a long time. You will be recovered without
                 consuming meth gradually after 12 months.</h4>
 			<div class="col-md-12 meth_select">
-				<label>Select one Year</label> &nbsp;&nbsp;
+				<label>Select one option</label> &nbsp;&nbsp;
 				<select id="mental_health_select" >
 					<option value="" disabled selected>Select...</option>
-					<option value="2010">2010</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>		
+					<option value="Used in the previous month">Used in the previous month</option>
+					<option value="Used in the previous 12 months">Used in the previous 12 months</option>
+					<option value="Not used in the previous 12 months">Not used in the previous 12 months</option>
+				</select>
 				<div id="mental_health_present" style="width:600px; height:400px"></div>
 			</div>
 
@@ -64,16 +64,21 @@
 			<h4>Do you know why your friend implicated in meth? Here are the reasons, and we
                                 provide the comparison of the reasons among different ages.</h4>
 			<div class="col-md-12 meth_select">
-				<label>Select one Year</label> &nbsp;&nbsp;
+				<label>Select age group</label> &nbsp;&nbsp;
 				<select id="first_use_select" >
 					<option value="" disabled selected>Select...</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>   	
-				<div id="meth_first_use" style="width:800px; height:600px"></div>				
+					<option value="14-19">14-19 years old</option>
+					<option value="20–29">20–29</option>
+					<option value="30–39">30–39</option>
+					<option value="40–49">40–49</option>
+					<option value="50–59">50–59</option>
+					<option value="60+">60+</option>
+
+				</select>
+				<div id="meth_first_use" style="width:800px; height:600px"></div>
 			</div>
 
-		</div>		
+		</div>
 	</div>
 </section><!-- end of about section -->
 
@@ -89,7 +94,7 @@
 				<div id="meth_cutdown" style="width:800px; height:600px"></div>
 			</div>
 		</div>
-	
+
 	</div>
 </section><!-- end of service section -->
 
@@ -100,17 +105,11 @@
 			<br>
 			<h4>Here are the “Chief Culprits” that hurt you and your Families!!</h4>
 			<div class="col-md-12 meth_select">
-				<label>Select one Year</label> &nbsp;&nbsp;
-				<select id="source_select" >
-					<option value="" disabled selected>Select...</option>
-					<option value="2010">2010</option>
-					<option value="2013">2013</option>
-					<option value="2016">2016</option>
-				</select>   	
+				
 				<div id="meth_source" style="width:800px; height:600px"></div>
 			</div>
 
-		</div>			
+		</div>
 	</div>
 </section><!-- end of about section -->
 

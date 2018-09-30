@@ -41,9 +41,9 @@
 							<div class="about-details" id="about-details">
 								
 								<h3></h3>
-								<p id="info_info"><br>If you are using methamphetamine,do you know the consequence of using Methamphetamine continuously?
-								<br>If you want to help your family and friend, do you really understand it?
-								<br>Click here If you want know more</p>
+								<p id="info_info"><br>Do you intend to use Methamphetamine more often than not? 
+								<br>Do you know the consequences involved using Methamphetamine? 
+								<br>Please click here to know more.</p>
 							</div>
 						</div>
 					</a>

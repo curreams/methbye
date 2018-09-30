@@ -27,7 +27,7 @@
     <header class="top-header" id="header_info">
         <div class="container">
             <div class="row">
-                <div class="col-xs-5 header-logo">
+                <div class="col-md-3 col-xs-5 header-logo">
                     <br>
                     @if (Route::has('login'))
                             
@@ -41,7 +41,7 @@
                     
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-9">
                     <nav class="navbar navbar-default">
                     <div class="container-fluid nav-bar">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,8 +63,9 @@
                             @if (Auth::check())
                             <li><a class="menu bluemenu" href="/welcome" >Home</a></li>
                             <li><a class="menu bluemenu" href="/info">Info</a></li>                            
-                            <li><a class="menu bluemenu" href="/events/info">Create Event</a></li>
-                            <li><a class="menu bluemenu" href="/events/timeline">See Events</a></li>
+                            <li><a class="menu bluemenu" href="/events/info">Record Episode</a></li>
+                            <li><a class="menu bluemenu" href="/events/timeline">Timeline</a></li>
+                            <li><a class="menu bluemenu" href="/reports">Report</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/logout') }}">Logout</a></li>
                             @else
                             <li><a class="menu bluemenu" href="/" >Home</a></li>

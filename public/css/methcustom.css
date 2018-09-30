@@ -50,7 +50,8 @@
     font-size: x-large;
 }
 #info_info{
-    font-size: large;
+    font-size: medium;
+    text-align: left;
 }
 .methfont{
     font-size:large;

@@ -64,7 +64,7 @@ class EventsController extends Controller
         } catch (Exception $exception) {
 
             return back()->withInput()
-                         ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request!']);
+                         ->withErrors(['unexpected_error' => 'Unexpected error '.$exception->getMessage() ]);
         }
     }
 

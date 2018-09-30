@@ -3,7 +3,7 @@ var trend = function()
 {
 
     var age = function (data) {
-        var myChart = echarts.init(document.getElementById('trend_source'));
+        let myChart = echarts.init(document.getElementById('trend_source'));
         var app = {};
         let user_trend_12 = [];
         let user_trend_18 = [];
@@ -119,7 +119,7 @@ var trend = function()
 
 
     var offences = function(data){
-        var myChart = echarts.init(document.getElementById('trend_source'));
+        let myChart = echarts.init(document.getElementById('trend_source'));
         var app = {};
         let offence_rate = [];
         let offence_rate_unique = [];
@@ -136,7 +136,7 @@ var trend = function()
     // specify chart configuration item and data
     
     
-        var option4 = {
+        var option = {
             tooltip: {
                 trigger: 'axis',
                 showContent: true
@@ -146,7 +146,13 @@ var trend = function()
                 data: ['2007', '2010' ,'2013','2016']
             },
             yAxis: {
-                type: 'value'
+                type: 'value',                    
+                axisLabel:{
+                formatter:'{value} %'
+                },
+                name:'Percentage of people involved in offence',
+                nameLocation: 'middle',
+                nameGap:50
             },
             series: [{
                 name:'offence rate',
@@ -158,14 +164,14 @@ var trend = function()
     
     
     // use configuration item and data specified to show chart
-        myChart.setOption(option4);
+        myChart.setOption(option);
     
     }
     
     
     
     var health = function (data){
-        var myChart = echarts.init(document.getElementById('trend_source'));
+        let myChart = echarts.init(document.getElementById('trend_source'));
         var app = {};
         let health_problem = [];
         data.forEach(function (value) {
@@ -177,7 +183,7 @@ var trend = function()
         });
     
     // specify chart configuration item and data
-        var option4 = {
+        var option1 = {
             tooltip: {
                 trigger: 'axis',
                 showContent: true
@@ -187,7 +193,13 @@ var trend = function()
                 data: ['2007', '2010', '2013','2016']
             },
             yAxis: {
-                type: 'value'
+                type: 'value',                    
+                axisLabel:{
+                formatter:'{value} %'
+                },
+                name:'Percentage of people with health problems',
+                nameLocation: 'middle',
+                nameGap:50
             },
             series: [{
                 name:'Health problem rate',
@@ -197,13 +209,13 @@ var trend = function()
             }]
         };
     // use configuration item and data specified to show chart
-        myChart.setOption(option4);
+        myChart.setOption(option1);
     
     }
     
     
     var death = function(data){
-        var myChart = echarts.init(document.getElementById('trend_source'));
+        let myChart = echarts.init(document.getElementById('trend_source'));
         var app = {};
         let death_rate = [];
         let death_rate_unique = [];
@@ -215,7 +227,7 @@ var trend = function()
         });
     
     // specify chart configuration item and data
-        var option4 = {
+        var option3 = {
             tooltip: {
                 trigger: 'axis',
                 showContent: true
@@ -225,7 +237,13 @@ var trend = function()
                 data: ['2007', '2010','2013','2016']
             },
             yAxis: {
-                type: 'value'
+                type: 'value',                    
+                axisLabel:{
+                formatter:'{value} %'
+                },
+                name:'Percentage of people died',
+                nameLocation: 'middle',
+                nameGap:50
             },
             series: [{
                 name:'Death rate',
@@ -235,7 +253,7 @@ var trend = function()
             }]
         };
     // use configuration item and data specified to show chart
-        myChart.setOption(option4);
+        myChart.setOption(option3);
     
     }
 

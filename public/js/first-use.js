@@ -4,6 +4,9 @@ var first_use = function()
     var first_user = function (data, year) {
         var myChart = echarts.init(document.getElementById('meth_first_use'));
         var app = {};
+
+
+       
     
         //let year = '2013';
         let ffm = 'Friends or family member were using it/offered by friend or family member';
@@ -19,22 +22,22 @@ var first_use = function()
         let type_experience = [];
         let type_other = [];
         data.forEach( function(value, index, array) {
-            if(value.year == year && value.reason.localeCompare(ffm)==0){
+            if(value.age == year && value.reason.localeCompare(ffm)==0){
                 type_friend.push(value.usage)
             }
-            if(value.year == year && value.reason.localeCompare(tiw)==0){
+            if(value.age == year && value.reason.localeCompare(tiw)==0){
                 type_mood.push(value.usage)
             }
-            if(value.year == year && value.reason.localeCompare(tds)==0){
+            if(value.age == year && value.reason.localeCompare(tds)==0){
                 type_exciting.push(value.usage)
             }
-            if(value.year == year && value.reason.localeCompare(tsw)==0){
+            if(value.age == year && value.reason.localeCompare(tsw)==0){
                 type_curiosity.push(value.usage)
             }
-            if(value.year == year && value.reason.localeCompare(tea)==0){
+            if(value.age == year && value.reason.localeCompare(tea)==0){
                 type_experience.push(value.usage)
             }
-            if(value.year == year && value.reason.localeCompare(other)==0){
+            if(value.age == year && value.reason.localeCompare(other)==0){
                 type_other.push(value.usage)
             }
     
@@ -111,7 +114,7 @@ var first_use = function()
     
         var labelOption = {
             normal: {
-                show: true,
+                show: false,
                 position: app.config.position,
                 distance: app.config.distance,
                 align: app.config.align,
@@ -128,7 +131,7 @@ var first_use = function()
         };
     
         var option = {
-            color: ['#003366', '#006699', '#4cabce', '#e5323e'],
+            color: ['#003366', '#006699', '#4cabce', '#e5323e','#FFD700','#FFA07A'],
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -157,12 +160,21 @@ var first_use = function()
                 {
                     type: 'category',
                     axisTick: {show: false},
-                    data: ['14-19 years old', '20-29 years old', '30-39 years old', '40-49 years old', '50-59 years old','60+ years old']
+                    //data: ['14-19 years old', '20-29 years old', '30-39 years old', '40-49 years old', '50-59 years old','60+ years old']
+                    data:['2013','2016'],
+                    
                 }
             ],
             yAxis: [
                 {
-                    type: 'value'
+                    type: 'value',                    
+                    axisLabel:{
+                    formatter:'{value} %'
+                    },
+                    name:'Percentage',
+                    nameLocation: 'middle',
+                    nameGap:50
+
                 }
             ],
             series: [

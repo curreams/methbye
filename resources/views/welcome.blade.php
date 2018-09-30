@@ -26,7 +26,7 @@
 		    <h4>Select an option</h4>
 			<div class="intro_layout">
 				
-				<div class="col-md-4 intro_inline">
+				<div class="col-md-3 intro_inline">
 					<a href="/info">
 						<div class="single-about-detail clearfix">
 							<div class="about-img" id="about-img">
@@ -35,15 +35,15 @@
 							<div class="about-details" id="about-details">
 								
 								<h3>Meth information</h3>
-								<p id="info_info"><br>If you are using methamphetamine,do you know the consequence of using Methamphetamine continuously?
-								<br>If you want to help your family and friend, do you really understand it?
-								<br>Click here If you want know more</p>
-								
+								<p id="info_info"><br>Do you intend to use Methamphetamine more often than not? 
+								<br>Do you know the consequences involved using Methamphetamine? 
+								<br>Please click here to know more.</p>
+								<br>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4 intro_inline">
+				<div class="col-md-3 intro_inline">
 					<a href="/events/info">
 						<div class="single-about-detail clearfix">
 							<div class="about-img" id="about-img">
@@ -54,15 +54,16 @@
 								<h3>Create an Event</h3>
 								<p id="info_info"><br>Please start sharing your feelings to get help from your friend/relative 
 								<br>whom you feel comfortable and secured with, and your friend/relative can keep track of 
-								<br>your status by creating the events.
+								your status by creating the events.
 								<br>
+								
 								<br>
 								
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4 intro_inline">
+				<div class="col-md-3 intro_inline">
 					<a href="/events/timeline">
 						<div class="single-about-detail clearfix">
 							<div class="about-img" id="about-img">
@@ -76,6 +77,25 @@
 								<br>
 								<br>
 								<br>
+								<br>
+								
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 intro_inline">
+					<a href="/reports">
+						<div class="single-about-detail clearfix">
+							<div class="about-img" id="about-img">
+								<img class="img-responsive" src="img/item4.jpg" alt="">
+							</div>
+							<div class="about-details" id="about-details">
+								
+								<h3>Generate Report</h3>
+								<p id="info_info"><br>Want to know where you or your friend/relative stand as a person in the process of quitting Meth? 
+								<br>Start generating reports from a specific period so that you can analyze yourself or your friend/relative's status.
+								
+
 								
 							</div>
 						</div>
