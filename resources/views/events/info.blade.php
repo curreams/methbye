@@ -15,7 +15,7 @@
                     @endforeach
                 </ul>
         @endif
-            <h2 class="text-center">{{ __('Event Details') }}</h2>
+            <h2 class="text-center">{{ __('Episode Details') }}</h2>
             <br>
             <br>
             <div class="intro_layout">              

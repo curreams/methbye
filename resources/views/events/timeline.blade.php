@@ -11,7 +11,7 @@
   <div class="entry">
     <div class="title">
       <h3>{!!date('d M Y', strtotime($event->date))!!}</h3>
-      <p></p>
+      <p>{!!date('h:i a', strtotime($event->date))!!}</p>
     </div>
     <div class="body">
       <p>{{$event->details}} </p>

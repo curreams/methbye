@@ -44,7 +44,15 @@ class Event extends Model
      * @var array
      */
     protected $casts = [];
-    
+
+ /**
+     * Get the events for this model.
+     */
+    public function reports()
+    {
+        return $this->belongsToMany('App\Models\Report','event_report','event_id','report_id')
+                    ->withTimestamps();
+    }
     /**
      * Get the user for this model.
      */
@@ -57,11 +65,21 @@ class Event extends Model
     {
         return Event::where('user_id', $id)->orderBy('date', 'asc')->get();
     }
+
+    public static function getEventByUserIdAndDate($id,$date_begin,$date_end)
+    {
+        
+        return Event::where('user_id', $id)
+                    ->where('date','>=', $date_begin)
+                    ->whereRaw(' date <= date(?) + 1', [$date_end])                    
+                    ->orderBy('date', 'asc')->get();
+    }
     public static function getFirstEventByUser($id)
     {
         return Event::where('user_id', $id)->first();
     }
 
+    
 
 
 }
