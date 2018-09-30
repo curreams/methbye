@@ -66,10 +66,12 @@
                             <li><a class="menu bluemenu" href="/events/info">Record Episode</a></li>
                             <li><a class="menu bluemenu" href="/events/timeline">Timeline</a></li>
                             <li><a class="menu bluemenu" href="/reports">Report</a></li>
+                            <li><a class="menu bluemenu" href="{{ url('/maps') }}">Hospitals</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/logout') }}">Logout</a></li>
                             @else
                             <li><a class="menu bluemenu" href="/" >Home</a></li>
                             <li><a class="menu bluemenu" href="/info">Info</a></li>
+                            <li><a class="menu bluemenu" href="{{ url('/maps') }}">Hospitals</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/login') }}">Login</a></li>
                             <li><a class="menu bluemenu" href="{{ url('/register') }}">Register</a></li>
                             @endif

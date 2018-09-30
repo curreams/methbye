@@ -8,7 +8,7 @@
 <section class="about text-center" id="register">
 	<div class="container">
 		<div class="row">
-            <h2>{{ __('Map') }}</h2>
+            <h2>{{ __('Nearby Hospitals') }}</h2>
             <br>
             <br>
             <br>
@@ -36,11 +36,11 @@
                                 </button>
                             </div>
                         </div>
-
-                <div id="mapview" style="width: 500px; height: 500px;">
-                    
+                <div class="col-md-5 col-sm-12 intro_inline" ></div>
+                <div class="col-md-7 col-sm-12 intro_inline" >
+                    <div id="mapview" style="width: 500px; height: 500px;">                    
                 </div>
-                
+                </div>
                     
                 </div>
 

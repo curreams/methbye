@@ -39,6 +39,7 @@
 								<br>Do you know the consequences involved using Methamphetamine? 
 								<br>Please click here to know more.</p>
 								<br>
+								<br>
 							</div>
 						</div>
 					</a>
@@ -51,13 +52,13 @@
 							</div>
 							<div class="about-details" id="about-details">
 								
-								<h3>Create an Event</h3>
+								<h3>Record an Episode</h3>
 								<p id="info_info"><br>Please start sharing your feelings to get help from your friend/relative 
 								<br>whom you feel comfortable and secured with, and your friend/relative can keep track of 
 								your status by creating the events.
-								<br>
 								
-								<br>
+								
+								
 								
 							</div>
 						</div>
@@ -71,13 +72,13 @@
 							</div>
 							<div class="about-details" id="about-details">
 								
-								<h3>See Events</h3>
+								<h3>Episodes Timeline</h3>
 								<p id="info_info"><br>Want to see the status of your friend to help him in the 
 								<br>process of recovery? Then have a look at the timeline of events created by you.
 								<br>
 								<br>
 								<br>
-								<br>
+								
 								
 							</div>
 						</div>
@@ -94,7 +95,8 @@
 								<h3>Generate Report</h3>
 								<p id="info_info"><br>Want to know where you or your friend/relative stand as a person in the process of quitting Meth? 
 								<br>Start generating reports from a specific period so that you can analyze yourself or your friend/relative's status.
-								
+								<br>
+								<br>	
 
 								
 							</div>

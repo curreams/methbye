@@ -28,10 +28,9 @@
 <section class="about text-center" id="info">
 	<div class="container">
 		<div class="row">
-			<h2>Information</h2>
-		    <h4>Understanding methamphetamine</h4>
+			<h2>Information</h2>		    
 			<div class="intro_layout">
-				<div class="col-md-3 intro_inline"></div>
+				
 				<div class="col-md-6 intro_inline" id="intro_methuser">
 					<a href="/info">
 						<div class="single-about-detail clearfix">
@@ -40,7 +39,7 @@
 							</div>
 							<div class="about-details" id="about-details">
 								
-								<h3></h3>
+								<h3>Understanding Methamphetamine</h3>
 								<p id="info_info"><br>Do you intend to use Methamphetamine more often than not? 
 								<br>Do you know the consequences involved using Methamphetamine? 
 								<br>Please click here to know more.</p>
@@ -48,6 +47,23 @@
 						</div>
 					</a>
 				</div>
+				<div class="col-md-6 intro_inline" id="intro_methuser">
+					<a href="/info">
+						<div class="single-about-detail clearfix">
+							<div class="about-img" id="about-img">
+								<img class="img-responsive" src="img/item5.jpg" alt="">
+							</div>
+							<div class="about-details" id="about-details">
+								
+								<h3>Search Nearby Hospitals</h3>
+								<p id="info_info"><br>Find the nearst hospital where you can get help 
+								<br>in case of Emergency
+								<br>
+								<br></p>
+							</div>
+						</div>
+					</a>
+				</div>				
 				<div class="col-md-3 intro_inline"></div>
 
 			</div>
