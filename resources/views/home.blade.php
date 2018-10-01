@@ -48,7 +48,7 @@
 					</a>
 				</div>
 				<div class="col-md-6 intro_inline" id="intro_methuser">
-					<a href="/info">
+					<a href="/maps">
 						<div class="single-about-detail clearfix">
 							<div class="about-img" id="about-img">
 								<img class="img-responsive" src="img/item5.jpg" alt="">
