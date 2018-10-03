@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Exception;
 use Auth;
+use Validator;
 
 class EventsController extends Controller
 {
@@ -172,7 +173,19 @@ class EventsController extends Controller
         }
         $userId = Auth::user()->id;
         $is_complete = 1;        
+        
+
+        
+        
         $date_time = $request['date'];
+
+        $validator = Validator::make($request->all(), [
+            'date' => 'bail|required|date|date_format:Y/m/d H:i|before:tomorrow',
+            
+        ], ['The date cannot be after today'])->validate();
+
+        
+
         
         $data = [
             'date' => $date_time,

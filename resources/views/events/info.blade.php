@@ -8,16 +8,16 @@
 <section class="about " id="register">
     <div class="container">
         <div class="row">
-        @if ($errors->any())
+            <h2 class="text-center">{{ __('Episode Details') }}</h2>
+            <br>
+            <br>
+            @if ($errors->any())
                 <ul class="alert alert-danger">
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
-        @endif
-            <h2 class="text-center">{{ __('Episode Details') }}</h2>
-            <br>
-            <br>
+            @endif
             <div class="intro_layout">              
                 <div class="col-md-8 col-sm-12 intro_inline" id="intro_methuser">
                     <div class="card-body methfont" >
