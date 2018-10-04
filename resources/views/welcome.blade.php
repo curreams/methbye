@@ -108,6 +108,42 @@
 
 
 		</div>
+		<div class="row">
+			<div class="intro_layout">				
+				<div class="col-md-3 intro_inline">
+					<a href="/maps">
+						<div class="single-about-detail clearfix">
+							<div class="about-img" id="about-img">
+								<img class="img-responsive" src="img/item5.jpg" alt="">
+							</div>
+							<div class="about-details" id="about-details">
+								
+								<h3>Search Nearby Hospitals</h3>
+								<p id="info_info"><br>Find the nearst hospital where you can get help 
+								<br>in case of Emergency
+								<br>
+								<br></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 intro_inline">
+					
+				</div>
+				<div class="col-md-3 intro_inline">
+					
+				</div>
+				<div class="col-md-3 intro_inline">
+					
+				</div>				
+
+
+
+
+			</div>
+
+
+		</div>		
 	</div>
 </section><!-- end of about section -->
 @endsection
