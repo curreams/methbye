@@ -47,7 +47,7 @@
 }
 
 .meth_select{
-    font-size: x-large;
+    font-size: large;
 }
 #info_info{
     font-size: medium;
@@ -55,5 +55,18 @@
 }
 .methfont{
     font-size:large;
+}
+#bs-example-navbar-collapse-2{
+    position: fixed;
+    top: auto;
+    background: #e7e7e7;
+    z-index: 99999;
+}
+
+#button-collapse{
+    position: fixed;
+    top: auto;
+    background: #e7e7e7;
+    z-index: 99999;
 }
 

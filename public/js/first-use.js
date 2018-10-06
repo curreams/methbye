@@ -239,7 +239,8 @@ var first_use = function()
   }
   var changeYear = function()
   {
-    $('#first_use_select').change(function(){            
+    $('#first_use_select').change(function(){
+        $('#text_use').show();            
         getAllFirstUse($(this).val());
     })
   }
@@ -247,6 +248,7 @@ var first_use = function()
     //main function to initiate the module
     init: function () 
     {
+        $('#text_use').hide();
         getAllFirstUse();
         changeYear();
       

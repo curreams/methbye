@@ -282,13 +282,20 @@ var trend = function()
     $('#trend_select').change(function(){
         let trend = $(this).val()
         if(trend.localeCompare("health")==0){
+            $('#text_health').show();
+            $('#text-death').hide();
+            $('#text-offence').hide();
             getAllTrend("health");
         }else if(trend.localeCompare("death")==0){
+            $('#text_health').hide();
+            $('#text-death').show();
+            $('#text-offence').hide();
             getAllTrend("death");
         }else if(trend.localeCompare("offences")==0){
+            $('#text_health').hide();
+            $('#text-death').hide();
+            $('#text-offence').show();
             getAllTrend("offences");
-        }else if(trend.localeCompare("age")==0){
-            getAllTrend("age");
         }
     })
   }
@@ -296,6 +303,9 @@ var trend = function()
     //main function to initiate the module
     init: function () 
     {
+        $('#text_health').hide();
+        $('#text-death').hide();
+        $('#text-offence').hide();
         getAllTrend("");
         changeTrend();      
     }
@@ -307,4 +317,5 @@ var trend = function()
 jQuery(document).ready(function() 
 {
     trend.init();
+
 });

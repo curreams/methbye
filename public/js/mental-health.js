@@ -216,7 +216,8 @@ var mental_health = function()
 
   var changeYear = function()
   {
-    $('#mental_health_select').change(function(){            
+    $('#mental_health_select').change(function(){
+        $('#text_mental').show();            
       getAllMentalDistress($(this).val());
     })
   }
@@ -224,6 +225,7 @@ var mental_health = function()
     //main function to initiate the module
     init: function () 
     {
+      $('#text_mental').hide();  
       changeYear();
       getAllMentalDistress(0);
       
