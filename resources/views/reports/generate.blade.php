@@ -33,14 +33,14 @@
                             <div class="form-group {{ $errors->has('date_begin') ? 'has-error' : '' }}">
                                 <label for="date_begin" class="col-md-2 control-label label-form">Start Date</label>
                                 <div class="col-md-4">
-                                    <input class="form-control" name="date_begin" id="date_begin" required>
+                                    <input class="form-control" name="date_begin" id="date_begin" autocomplete="off" required>
                                     {!! $errors->first('date_begin', '<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>
                             <div class="form-group {{ $errors->has('date_end') ? 'has-error' : '' }}">
                                 <label for="date_end" class="col-md-2 control-label label-form">End Date</label>
                                 <div class="col-md-4">
-                                    <input class="form-control" name="date_end" id="date_end" required>
+                                    <input class="form-control" name="date_end" id="date_end" autocomplete="off" required>
                                     {!! $errors->first('date_end', '<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>                            

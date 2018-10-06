@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
-
+<link rel="shortcut icon" href="{{ asset('img/logo.ico') }}" >
 <link rel="stylesheet" href="css/methcustom.css">
 <script src="js/modernizr.js"></script>
 	<!--[if lt IE 9]>

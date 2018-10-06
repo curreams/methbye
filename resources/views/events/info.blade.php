@@ -26,7 +26,7 @@
                             <div class="form-group {{ $errors->has('date') ? 'has-error' : '' }}">
                                 <label for="date" class="col-md-2 control-label label-form">Date</label>
                                 <div class="col-md-4">
-                                    <input class="form-control" name="date" id="date" required>
+                                    <input class="form-control" name="date" id="date" autocomplete="off" required>
                                     {!! $errors->first('date', '<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>

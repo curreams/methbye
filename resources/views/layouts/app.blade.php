@@ -19,6 +19,7 @@
 	
     <link rel="stylesheet" href="{{ asset('css/datepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('css/timeline.css') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo.ico') }}" >
 	
 </head>
 
