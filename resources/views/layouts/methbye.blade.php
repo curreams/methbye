@@ -58,12 +58,12 @@ header section -->
 						<li><a class="menu" href="/events/info">Record Episode</a></li>
 						<li><a class="menu" href="/events/timeline">See Episodes</a></li>
 						<li><a class="menu" href="/reports">Report</a></li>
-						<li><a class="menu" href="{{ url('/maps') }}">Hospitals</a></li>
+						<li><a class="menu" href="{{ url('/help') }}">Support Services</a></li>
 						<li><a class="menu" href="{{ url('/logout') }}">Logout</a></li>
 						@else
 						<li><a class="menu active" href="/" >Home</a></li>
 						<li><a class="menu" href="/info">Info</a></li>
-						<li><a class="menu" href="{{ url('/maps') }}">Hospitals</a></li>
+						<li><a class="menu" href="{{ url('/help') }}">Support Services</a></li>
 						<li><a class="menu" href="{{ url('/login') }}">Login</a></li>
 						<li><a class="menu" href="{{ url('/register') }}">Register</a></li>
 						@endif

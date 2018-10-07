@@ -111,16 +111,16 @@
 		<div class="row">
 			<div class="intro_layout">				
 				<div class="col-md-3 intro_inline">
-					<a href="/maps">
+					<a href="/help">
 						<div class="single-about-detail clearfix">
 							<div class="about-img" id="about-img">
-								<img class="img-responsive" src="img/item5.jpg" alt="">
+								<img class="img-responsive" src="img/item5.jpeg" alt="">
 							</div>
 							<div class="about-details" id="about-details">
 								
-								<h3>Search Nearby Hospitals</h3>
-								<p id="info_info"><br>Find the nearst hospital where you can get help 
-								<br>in case of Emergency
+								<h3>Support Services</h3>
+								<p id="info_info"><br>Find services that can assist you with more information 
+								<br>
 								<br>
 								<br></p>
 							</div>

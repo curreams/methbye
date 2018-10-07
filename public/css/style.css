@@ -70,7 +70,7 @@ ul.nav {
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
-    padding: 14px 15px;
+    padding: 14px 10px;
     font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover {
@@ -376,13 +376,13 @@ li a.active {
     padding-bottom: 60px;
 }
 .team h2 {
-    font-size: 90px;
+    font-size: 46px;
     color: #42b3e5;
     margin-top: 50px;
     margin-bottom: 0;
 }
 .team h4 {
-    font-size: 24px;
+    font-size: 20px;
     color: #737373;
     margin-top: 0;
     margin-bottom: 45px;
@@ -391,9 +391,7 @@ li a.active {
     margin: 0;
     padding: 0;
 }
-.person img {
-    width: 100%;
-}
+
 .person-detail {
     padding: 10px;
     background: #3a9cc8;
@@ -667,8 +665,8 @@ responsive area
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-default .navbar-nav>li>a {
-        font-size: 20px;
-        padding: 14px 12px;
+        font-size: 15px;
+        padding: 14px 4px;
     }
     .carousel-caption h1 {
         font-size: 120px;
@@ -682,10 +680,10 @@ responsive area
         font-size: 26px;
     }
     h2 {
-        font-size: 75px !important;
+        font-size: 46px !important;
     }
     h4 {
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
     .person-detail h3 {
         font-size: 26px;
@@ -699,8 +697,8 @@ responsive area
 
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-default .navbar-nav>li>a {
-        font-size: 16px;
-        padding: 10px 8px;
+        font-size: 15px;
+        padding: 10px 4px;
     }
     .carousel-caption h1 {
         font-size: 90px;

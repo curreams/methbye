@@ -173,4 +173,11 @@ Route::group(
             Route::get('/','MapsController@index');            
             
         });
-    
+        Route::group(
+            [
+                'prefix' => 'help',
+            ], function () {
+                   
+                Route::get('/','HelpController@index');            
+                
+            });    
