@@ -13,8 +13,21 @@
 						<div class="carousel-caption">
 							<h1>Methbye</h1>
 							<p>An excellent source for providing a helping hand to your friend/relative in the recovery process.</p>
-							<!--<button>learn more</button>-->
-						</div>
+							@if (Route::has('login'))                            
+							@if (!Auth::check())
+							<a href="{{ url('/login') }}" >
+								<button id="button_login" type="button" class="btn btn-primary">
+									{{ __('Login') }}
+								</button>
+							</a>
+							<a href="{{ url('/register') }}" >
+								<button id="button_register" type="button" class="btn btn-primary">
+									{{ __('Register') }}
+								</button>
+							</a>
+							@endif
+							@endif
+				</div>
 					</div>
 				</div>
 			</div>

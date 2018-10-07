@@ -69,4 +69,46 @@
     background: #e7e7e7;
     z-index: 99999;
 }
+#button_login{
+    margin-left: 25%;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+#button_register{
+    margin-left: 25%;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #button_register{
+        margin-left: 0%;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #button_login{
+        margin-left: 10%;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    #button_register{
+        margin-left: 0%;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }  
+}
