@@ -43,8 +43,7 @@ var fillReport = function(data)
     $('#table_body').append(html);
     // reset the count:
     
-    console.log(events);
-
+    
 }
 
 jQuery(document).ready(function () {

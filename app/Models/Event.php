@@ -75,12 +75,27 @@ class Event extends Model
                     ->whereRaw(' date <= date(?) + 1', [$date_end])                    
                     ->orderBy('date', 'asc')->get();
     }
+    public static function getEventByUserIdAndDateBegin($id,$date_begin)
+    {
+        
+        return Event::where('user_id', $id)
+                    ->where('is_complete',1)
+                    ->where('date','>=', $date_begin)                                       
+                    ->orderBy('date', 'asc')->get();
+    }
+    public static function getEventByUserIdAndDateEnd($id,$date_end)
+    {
+        
+        return Event::where('user_id', $id)
+                    ->where('is_complete',1)                    
+                    ->whereRaw(' date <= date(?) + 1', [$date_end])                    
+                    ->orderBy('date', 'asc')->get();
+    }       
     public static function getFirstEventByUser($id)
     {
         return Event::where('user_id', $id)->first();
     }
 
-    
 
 
 }

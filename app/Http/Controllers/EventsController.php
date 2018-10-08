@@ -257,6 +257,31 @@ class EventsController extends Controller
         return view('events.info');
     }
 
+    public function filterByDate(Request $request)
+    {
+        
+        $userId = Auth::user()->id;
+        if($request['date_begin'] && $request['date_end']) {
+            $events = Event::getEventByUserIdAndDate(
+                            $userId,
+                            $request['date_begin'],
+                            $request['date_end']);        
+
+        } else if($request['date_begin'] && !$request['date_end']) {
+            $events = Event::getEventByUserIdAndDateBegin(
+                $userId,
+                $request['date_begin']);            
+        } else if (!$request['date_begin'] && $request['date_end']) {
+            $events = Event::getEventByUserIdAndDateEnd(
+                $userId,
+                $request['date_end']); 
+        } else if (!$request['date_begin'] && !$request['date_end']) {
+            $events = Event::getEventByUserId($userId);
+        }
+        return view('events.timeline', compact('events'));
+
+    }
+
 
 
 }

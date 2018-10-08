@@ -118,6 +118,9 @@ Route::group(
     Route::get('/', 'EventsController@index')
          ->name('events.event.index');
 
+    Route::get('/filterByDate', 'EventsController@filterByDate')
+        ->name('events.event.filter');     
+
     Route::get('/create','EventsController@create')
          ->name('events.event.create');
 
